@@ -40,8 +40,8 @@ class GameOfNim(Game):
         """Return the value to player; 1 for win, -1 for loss, 0 otherwise."""
         if self.terminal_test(state):
             if state.to_move == player:
-                return -1
-            else : return 1
+                return 1
+            else : return -1
         return 0
 
     def terminal_test(self, state):
@@ -65,3 +65,4 @@ if __name__ == "__main__":
         print("MIN won the game")
     else:
         print("MAX won the game")
+
